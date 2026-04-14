@@ -8,7 +8,6 @@
 # --------------------------
 .cursor/
 .cursor
-.env
 .env.local
 .env.development.local
 .env.test.local
@@ -16,8 +15,6 @@
 *.pem
 *.key
 docker/.env
-client/.env
-server/.env
 
 # --------------------------
 # DEPENDENCIES
