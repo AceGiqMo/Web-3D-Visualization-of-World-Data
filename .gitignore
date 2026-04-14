@@ -16,6 +16,8 @@
 *.pem
 *.key
 docker/.env
+client/.env
+server/.env
 
 # --------------------------
 # DEPENDENCIES
