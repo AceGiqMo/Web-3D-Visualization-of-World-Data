@@ -292,7 +292,7 @@ export default function App() {
 
   useEffect(() => {
     fetch(
-      `http://localhost:8000/choropleth/${encodeURIComponent(selectedMetric)}/${encodeURIComponent(selectedYear)}`
+      `https://web-3d-visualization-of-world-data.onrender.com/choropleth/${encodeURIComponent(selectedMetric)}/${encodeURIComponent(selectedYear)}`
     )
       .then((res) => res.json())
       .then((data) => {
@@ -316,7 +316,7 @@ export default function App() {
     }
 
     fetch(
-      `http://localhost:8000/country-data/${encodeURIComponent(
+      `https://web-3d-visualization-of-world-data.onrender.com/country-data/${encodeURIComponent(
         selectedCountry
       )}/${encodeURIComponent(selectedYear)}`
     )
@@ -331,7 +331,7 @@ export default function App() {
   useEffect(() => {
     if (!selectedCountry) return;
     fetch(
-      `http://localhost:8000/country-series/${encodeURIComponent(selectedCountry)}`
+      `https://web-3d-visualization-of-world-data.onrender.com/country-series/${encodeURIComponent(selectedCountry)}`
     )
       .then((res) => res.json())
       .then((rows) => setCountrySeries(Array.isArray(rows) ? rows : []))
